@@ -1,5 +1,8 @@
-with open('input.txt', 'r') as file:
+import sys
+
+with open(sys.argv[1]) as file:
 	dat = file.read()
+
 
 ref = dat.splitlines()[0]
 qu = dat.splitlines()[1]
