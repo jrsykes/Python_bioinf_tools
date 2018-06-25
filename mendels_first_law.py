@@ -1,3 +1,12 @@
+##############################################
+##############################################
+
+#No nee for input file. Run with the command: "python mendels_first_law.py" and follow the prompts
+
+##############################################
+##############################################
+
+
 from decimal import *
 getcontext().prec = 5
 
