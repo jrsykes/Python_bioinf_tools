@@ -1,3 +1,6 @@
+print "Programme not yet ready for use. Take a nap, you deserve it"
+quit()
+
 from Bio import SeqIO
 import os
 import linecache

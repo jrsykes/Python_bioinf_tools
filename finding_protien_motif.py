@@ -1,4 +1,4 @@
-print "Script not yet ready for use. Pop the kettel on and put your feet up for a spell"
+print "Programme not yet ready for use. Pop the kettel on and put your feet up for a spell"
 quit()
 
 import os
