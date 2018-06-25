@@ -1,4 +1,30 @@
+##############################################
+##############################################
 
+# Example data: 
+
+# Input: FASTA file	
+#		>Rosalind_0498
+#		AAATAAA
+#		>Rosalind_2391
+#		AAATTTT
+#		>Rosalind_2323
+#		TTTTCCC
+#		>Rosalind_0442
+#		AAATCCC
+#		>Rosalind_5013
+#		GGGTGGG	
+
+# Output: 
+#		Rosalind_0498 Rosalind_2391
+#		Rosalind_0498 Rosalind_0442
+#		Rosalind_2391 Rosalind_2323
+
+##############################################
+##############################################
+
+
+import sys
 from Bio import SeqIO
 import os
 import linecache
@@ -6,7 +32,8 @@ import math
 
 n_seqs = 0
 
-with open('input.txt', 'rU') as file:
+
+with open(sys.argv[1], 'rU') as file:
 	for record in SeqIO.parse(file, 'fasta'):
 		with open('temp_seq', 'a') as file_seq, open('temp_rec', 'a') as file_id:
 			seq = str(record.seq)
@@ -19,7 +46,7 @@ n_seqs2_external = n_seqs
 
 loop_counter = 0
 line_number_ref = 0
-with open('input.txt', 'rU') as file, open('temp_seq', 'r') as file_seq, open('temp_rec', 'r') as file_id:
+with open(sys.argv[1], 'rU') as file, open('temp_seq', 'r') as file_seq, open('temp_rec', 'r') as file_id:
 	ids = file_id.readlines()
 	while n_seqs > 0:
 		line_number_ref = line_number_ref + 1
