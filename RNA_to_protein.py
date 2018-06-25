@@ -1,7 +1,9 @@
 ##############################################
 ##############################################
 
-# Example data: AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA
+# Example data: 
+# Input: AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA
+# Output: MAMAPRTEINSTRING
 
 ##############################################
 ##############################################

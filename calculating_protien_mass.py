@@ -1,4 +1,16 @@
-weights = {
+##############################################
+##############################################
+
+# Example data: 
+# Input: SKADYEK
+# Output: Monoisotopic mass: 821.39192
+
+##############################################
+##############################################
+
+import sys
+
+masses = {
 "A" : 71.03711,
 "C" : 103.00919,
 "D" : 115.02694,
@@ -21,16 +33,16 @@ weights = {
 "Y" : 163.06333, 
 	}
 
-weight = 0
+mass = 0
 
-with open('input.txt') as file:
+with open(sys.argv[1]) as file:
 	from decimal import *
 	getcontext().prec = 6
 	string = file.readline().strip()
 	for letter in string:
-		weight = weight + weights.get(letter, 'none')
+		mass = mass + masses.get(letter, 'none')
 
-print weight
+print "Monoisotopic mass: " + str(mass)
 
 
 		
