@@ -3,11 +3,11 @@ getcontext().prec = 5
 
 import math
 
-homd = input('n homozygous dominant')
+homd = input('n homozygous dominant: ')
 
-het = input('n heterozygous')
+het = input('n heterozygous: ')
 
-homr = input('n homozygous recessive')
+homr = input('n homozygous recessive: ')
 
 N = homd + het + homr
 
@@ -22,7 +22,7 @@ n_homd_homd_matings = Decimal(n_combinations - n_het_matings - n_het_homr_mating
 
 out = Decimal((n_homd_homd_matings/n_combinations+(n_het_matings/n_combinations*3/4)+n_het_homr_matings/n_combinations*1/2))
 
-print out
+print "probability that two randomly selected mating organisms will produce an individual possessing a dominant allele: " + str(out)
 
 
 
