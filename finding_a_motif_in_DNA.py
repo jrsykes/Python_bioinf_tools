@@ -1,3 +1,17 @@
+##############################################
+##############################################
+
+# Example data: 
+# Input: Two DNA strings, s & t 	
+#			s = GATATATGCATATACTT
+#			t = ATAT
+# Output: All locations of t as a substring of s
+#			2, 4 & 10
+
+##############################################
+##############################################
+
+
 import sys
 
 with open(sys.argv[1]) as file:
@@ -7,13 +21,6 @@ with open(sys.argv[1]) as file:
 ref = dat.splitlines()[0]
 qu = dat.splitlines()[1]
 
-#print ref.find(qu, 0, len(ref))
-
-print ref
-print qu
-print ''
-print [[[[[[[[[[[[[[[[88]]]]]]]]]]]]]]]]
-print ''
 
 length = len(ref)
 
