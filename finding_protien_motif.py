@@ -4,14 +4,14 @@
 #Run using the command 'python finding_protien_motif.py input.txt'
 #
 # Example data: 
-# Input: 	P28653_PGS1_MOUSE
+# Input: 		P28653_PGS1_MOUSE
 #			P81447_MPP3_CAPHI
 #			P01047_KNL2_BOVIN
 #			Q7S432
 #			Q5PA87
 #			P28314_PER_COPCI
 
-# Output: 	P28653_PGS1_MOUSE
+# Output: 		P28653_PGS1_MOUSE
 #			271 312
 #			P81447_MPP3_CAPHI
 #			96
